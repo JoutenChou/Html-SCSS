@@ -59,10 +59,17 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 /*layout*/
 .wrap {
   max-width: 1180px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .focus {
@@ -339,27 +346,28 @@ body {
   margin: 20px 0;
 }
 
-.compare-body table thead {
+.compare-body thead {
   background-color: #bbbbbb;
 }
 
-.compare-body table thead th {
+.compare-body thead th {
   padding: 20px;
   font-weight: bold;
 }
 
-.compare-body table tbody th {
+.compare-body tbody th {
   padding: 20px;
 }
 
-.compare-body table tbody tr {
+.compare-body tbody tr {
   border-bottom: 4px dotted #DADADA;
 }
 
-.compare-body table tbody tr:hover {
+.compare-body tbody tr:hover {
   background-color: #DADADA;
 }
 
+/*connect*/
 .connect {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,56 +379,58 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 500px;
-  margin: 20px 0;
   background-color: #DADADA;
+  margin: 20px 0;
 }
 
 .connect h4 {
-  font-size: 32px;
-  line-height: 50px;
-}
-
-.connect form {
-  margin-left: 20px;
-}
-
-.connect form input[type=text], .connect form input[type=email] {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 400px;
-  height: 20px;
-  border: 0;
-  padding: 10px;
-  border-radius: 4px;
-}
-
-.connect form input + input {
-  margin-top: 20px;
-}
-
-.connect form input[type=submit] {
-  float: right;
-  background-color: transparent;
-  color: #93433C;
-  font-weight: bold;
-  letter-spacing: 10px;
-  text-indent: 10px;
   text-align: center;
-  border: 2px solid #93433C;
+  width: 50%;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.connect h4 strong {
+  margin: 0 2%;
+  font-weight: bold;
+  color: #93433C;
+}
+
+.connect .connect-form {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.connect .connect-form input {
+  display: block;
+  width: 100%;
+  padding-left: 10px;
   height: 40px;
-  width: 100px;
+  border: 0;
   border-radius: 4px;
 }
 
-.connect form input[type=submit]:hover {
+.connect .connect-form input:nth-child(2) {
+  margin-top: 10px;
+}
+
+.connect .form-group {
+  float: right;
+  margin-top: 10px;
+}
+
+.connect .form-group button {
+  border: 1.5px solid #93433C;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #93433C;
+  height: 30px;
+  width: 120px;
+}
+
+.connect .form-group button:hover {
   background-color: #93433C;
   color: #ffffff;
-}
-
-.connect form input[type=submit]::after {
-  display: table;
-  clear: both;
-  content: "";
 }
 /*# sourceMappingURL=all.css.map */

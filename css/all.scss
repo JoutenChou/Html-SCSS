@@ -4,10 +4,15 @@
 body{
   font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
+* {
+  box-sizing: border-box;
+}
 /*layout*/
 .wrap{
   max-width: 1180px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .focus{
   color: $coffee;
@@ -210,14 +215,14 @@ body{
     width: 100%;
     margin: 20px 0; 
   }
-  table thead{
+  thead{
     background-color: $table-titlecolor; 
     th{
       padding: 20px;
       font-weight: bold;
     }
   }
-  table tbody{
+  tbody{
     th{
       padding: 20px;
     }
@@ -229,51 +234,55 @@ body{
     }
   }
 }
+/*connect*/
 .connect{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 500px;
-  margin: 20px 0;
   background-color: $table-bgcolor;
+  margin: 20px 0;
   h4{
-    font-size: 16px * 2;
-    line-height: 50px;
+    text-align: center;
+    width: 50%;
+    font-size: $fontSize * 1.75;
+    font-weight: bold;
   }
-}
-.connect form{
-  margin-left: 20px;
-  input[type=text],input[type=email]{
-    display: flex;
-    width: 400px;
-    height: 20px;
+  h4 strong{
+    margin: 0 2%;
+    font-weight: bold;
+    color: $coffee;
+  }
+  .connect-form{
+    width: 40%;
+    margin: 0 auto;
+  }
+  .connect-form input{
+    display: block;
+    width: 100%;
+    padding-left:10px;
+    height: 40px;
     border: 0;
-    padding: 10px;
+    border-radius: 4px;
+    &:nth-child(2){
+      margin-top:10px; 
+    }    
+  }
+  .form-group{
+    float:right;
+    margin-top: 10px;
+  }
+  .form-group button{
+    border: 1.5px solid $coffee;
     border-radius:4px; 
+    font-size: $fontSize * 1.25;
+    font-weight: bold;
+    color: $coffee;
+    height: 30px;
+    width: 120px;
+    &:hover{
+      background-color: $coffee;
+      color:$white;
     }
-    input + input{
-      margin-top: 20px;
-    }
-    input[type=submit]{
-      float:right;
-      background-color: transparent;
-      color: $coffee;
-      font-weight: bold;
-      letter-spacing: 10px;
-      text-indent: 10px;
-      text-align: center;
-      border: 2px solid $coffee;
-      height: 40px;
-      width: 100px;
-      border-radius:4px;
-       &:hover{
-         background-color: $coffee;
-         color: $white;
-       }
-       &::after{
-         display: table;
-         clear: both;
-         content: "";
-       }
-    }
+  }
 }
