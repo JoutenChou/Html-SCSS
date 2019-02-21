@@ -1,0 +1,10 @@
+@import "varibles.scss";
+
+/*主體架構*/
+@mixin box-sizing(){
+  box-sizing: border-box;
+}
+/*常用樣式*/
+@mixin text-decoration-none(){
+  text-decoration: none;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SCSS自我練習</title>
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="header">
+      <nav class="top-menu">
+        <div class="logo">
+          <a href="#">
+            <h1>JT旅遊</h1>
+          </a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">介紹</a></li>
+            <li><a href="#">問答</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="banner-title">
+        <h3>
+          歡迎來到<strong>JT旅遊</strong></br>
+          帶你探索世界著名景點
+        </h3>
+        <a href="#">立即報名<i class="fas fa-arrow-right"></i></a>
+      </div>
+    </header>
+    <section class="veiwpoint">
+      <div class="veiwpoint-head">
+        <div class="veiwpoint-title">
+          <h3>精選景點</h3>
+          <small>幫助你了解各地藝文風采</small>
+        </div>
+        <div class="veiwpoint-more">
+          <a href="#">更多資訊</a>
+        </div>
+      </div>
+      <div class="veiwpoint-content">
+        <div class="veiw-card">
+          <img src="./img/boli.jpg">
+          <h4>法國 巴黎</h4>
+          <p>法國的首都及最大都市，同時是法蘭西島大區首府，為法國的政治與文化中心，隸屬法蘭西島大區之下的巴黎省</p>
+        </div>
+        <div class="veiw-card">
+          <img src="./img/tokyo.jpg">
+          <h4>日本 東京</h4>
+          <p>位於日本關東地方的都市，狹義上指東京都、或東京都區部（即東京市區），泛指東京都及周邊都市群相連而成的「首都圈」</p>
+        </div>
+        <div class="veiw-card">
+          <img src="./img/miami.jpg">
+          <h4>美洲 邁阿密</h4>
+          <p>位於美國佛羅里達州東南角比斯坎灣 ，良好的空氣品質 ，清潔的飲用水 ，乾淨的街道和全市範圍的垃圾回收計劃</p>
+        </div>
+      </div>
+    </section>
+    <section class="compare">
+      <div class="compare-title">
+        <h4>旅遊比較</h4>
+        <small>各地旅遊及行程對比</small>
+      </div>
+      <div class="compare-body">
+        <table>
+          <thead>
+            <tr>
+              <th>地點</th>
+              <th>費用安排</th>
+              <th>交通行程規劃</th>
+              <th>旅遊安全</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>東京</th>
+              <th>較高</th>
+              <th>緊湊</th>
+              <th class="focus">很好</th>
+            </tr>
+            <tr>
+              <th>巴黎</th>
+              <th>較高</th>
+              <th class="focus">較自由</th>
+              <th class="focus">很好</th>
+            </tr>
+            <tr>
+              <th>邁阿密</th>
+              <th class="focus">較低</th>
+              <th class="focus">較自由</th>
+              <th class="focus">很好</th>
+            </tr>
+            <tr>
+              <th>土耳其</th>
+              <th class="focus">較低</th>
+              <th class="focus">較自由</th>
+              <th>普通</th>
+            </tr>
+            <tr>
+              <th>上海</th>
+              <th>較高</th>
+              <th>緊湊</th>
+              <th>很好</th>
+            </tr>
+            <tr>
+              <th>北京</th>
+              <th>較高</th>
+              <th>不一定</th>
+              <th>不一定</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="connect">
+      <h4>對我們的旅遊有興趣嗎 ！</br> 
+          快留下資料讓我們認識你吧</h4>
+      <form action="#">
+        <input type="text" placeholder="填入你的名字">
+        <input type="email" placeholder="example@mail.com">
+        <input type="submit" value="送出">
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="logo">
+        <a href="#">
+          <h2>JT旅遊</h2>
+        </a>
+      </div>
+      <div class="copyright">
+        <p>&copy;Copright 2018 JT</p>
+      </div>
+      <div class="icon-box">
+        <a href="#"><img src="./img/facebook_icon.png"></a>
+        <a href="#"><img src="./img/ig_icon.png"></a>
+        <a href="#"><img src="./img/twiter_icon.png"></a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
