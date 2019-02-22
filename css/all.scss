@@ -1,16 +1,16 @@
 @import "_resert.scss";
 @import "_varibles.scss";
+@import "_mixins.scss";
 
 body{
   font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 * {
-  box-sizing: border-box;
+  @include  box-sizing;
 }
 /*layout*/
 .wrap{
-  max-width: 1180px;
-  margin: 0 auto;
+  @include max-width-1180;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -27,15 +27,12 @@ body{
   .top-menu{
     background-color: $rgba-40-black;
     height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-justify-bt;
     box-shadow: 1px 1px 5px $sun;
   }
   .logo h1{
       background-image: url("../img/logo-title.png");
-      background-position: center;
-      background-repeat: no-repeat;
+      @include bg-center;
       width: 200px;
       height: 80px;
       text-indent: 101%;
@@ -46,10 +43,10 @@ body{
       padding: 0 20px;
   }
   .menu ul{
-        display: flex;
+        @include d-flex;
   }
   ul li a{
-      text-decoration: none;
+      @include text-line-none;
       color: $white;
       padding: 20px;
       font-size: 24px;
@@ -103,20 +100,15 @@ body{
 } 
 /*footer*/
 .footer{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-justify-bt;
   background-color: $block;
   padding: 0 15px;
   h2{
     background-image: url("../img/logo-title.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    @include bg-no-repeat;
     width: 200px;
     height: 80px;
-    text-indent: 101%;
-    overflow: hidden;
-    white-space: nowrap;
+    @include text-hide;
   }
   .copyright{
     color: $white;
@@ -133,16 +125,13 @@ body{
 .veiwpoint{
   margin: 20px 0;
   .veiwpoint-head{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-justify-bt;
   }
   .veiwpoint-title{
-    display: flex;
-    align-items: flex-end;
+    @include flex-align-end;
   }
   .veiwpoint-title h3{
-    font-size: 32px;
+    @include fontSize ;
     font-weight: bold;
     color: $coffee;
   }
@@ -164,9 +153,8 @@ body{
     }
   }
   .veiwpoint-content{
-    display: flex;
+   @include flex-justify-bt;
     margin: 20px 0;
-    justify-content: space-between;
   }
   .veiw-card{
     box-shadow: 1px 3px 15px $small-title;
@@ -198,8 +186,7 @@ body{
   margin: 20px 0;
 }
 .compare-title{
-  display: flex;
-  align-items: flex-end;
+  @include flex-align-end;
   h4{
     font-size: 16px * 2;
     font-weight: bold;
@@ -236,9 +223,7 @@ body{
 }
 /*connect*/
 .connect{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ @include flex-center;
   height: 500px;
   background-color: $table-bgcolor;
   margin: 20px 0;

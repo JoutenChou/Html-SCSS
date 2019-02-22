@@ -55,6 +55,14 @@ table {
 
 /*網頁自訂顏色*/
 /*透明色*/
+/*網頁自訂顏色*/
+/*透明色*/
+/*主體架構*/
+/*常用樣式*/
+/*flex常用方法*/
+/*背景圖片*/
+/*文字*/
+/*文字隱藏*/
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -91,12 +99,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-shadow: 1px 1px 5px #FDDAA4;
           box-shadow: 1px 1px 5px #FDDAA4;
 }
@@ -104,6 +112,7 @@ body {
 .header .logo h1 {
   background-image: url("../img/logo-title.png");
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 200px;
   height: 80px;
@@ -188,12 +197,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #000000;
   padding: 0 15px;
 }
@@ -204,8 +213,8 @@ body {
   background-repeat: no-repeat;
   width: 200px;
   height: 80px;
-  text-indent: 101%;
   overflow: hidden;
+  text-indent: 101%;
   white-space: nowrap;
 }
 
@@ -231,12 +240,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .veiwpoint .veiwpoint-title {
@@ -249,7 +258,7 @@ body {
 }
 
 .veiwpoint .veiwpoint-title h3 {
-  font-size: 32px;
+  font-size: 16px;
   font-weight: bold;
   color: #93433C;
 }
@@ -278,10 +287,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 20px 0;
 }
 
 .veiwpoint .veiw-card {
