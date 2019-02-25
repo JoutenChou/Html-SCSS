@@ -1,0 +1,68 @@
+/*connect*/
+.connect{
+  @include flex-center;
+   height: 500px;
+   background-color: $table-bgcolor;
+   margin: 20px 0;
+   @include pad(){
+     flex-flow: column;
+   }
+   h4{
+     text-align: center;
+     width: 50%;
+     font-size: $fontSize * 1.75;
+     font-weight: bold;
+     @include pad(){
+       margin-bottom: 50px;
+     }
+   }
+   h4 strong{
+     margin: 0 2%;
+     font-weight: bold;
+     color: $coffee;
+   }
+   .connect-form{
+     width: 40%;
+     margin: 0 auto;
+     @include pad(){
+       width: 80%;
+     }
+   }
+   .connect-form input{
+     display: block;
+     width: 100%;
+     padding-left:10px;
+     height: 40px;
+     border: 0;
+     border-radius: 4px;
+     &:nth-child(2){
+       margin-top:10px; 
+     }    
+   }
+   .form-group{
+     float:right;
+     margin-top: 10px;
+     @include pad(){
+       float: none;
+       button + button{
+         margin-top: 10px;
+       }
+     }
+   }
+   .form-group button{
+     border: 1.5px solid $coffee;
+     border-radius:4px; 
+     font-size: $fontSize * 1.25;
+     font-weight: bold;
+     color: $coffee;
+     height: 30px;
+     width: 120px;
+     &:hover{
+       background-color: $coffee;
+       color:$white;
+     }
+     @include pad(){
+       width: 100%;
+     }
+   }
+ }

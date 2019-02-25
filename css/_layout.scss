@@ -1,3 +1,118 @@
-@mixin body-font(){
-  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+@import "_varibles.scss";
+@import "_mixins.scss";
+@import "_grid.scss";
+/*layout*/
+.wrap{
+  @include max-width-1180;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.focus{
+  color: $coffee;
+  font-weight: bold;
+}
+/*header*/
+.header{
+  background-color: $rgba-80-black;
+  height: 100px;
+  position: fixed;
+  left: 15px;
+  right: 15px;
+  max-width:1150px;
+  margin: 0 auto;
+  transition: all 1s;
+  .top-menu{
+    @include flex-justify-bt;
+    align-items: center;
+    height: 100%;
+  }
+  .logo h1{
+      background-image: url("../img/logo-title.png");
+      @include bg-center;
+      width: 200px;
+      height: 80px;
+      text-indent: 101%;
+      overflow: hidden;
+      white-space: nowrap;
+  }
+  .pc-menu{
+    @include pad{
+      display: none;
+    }
+      padding: 0 20px;
+  }
+  .pc-menu ul{
+      @include d-flex;
+  }
+  .moblie-menu{
+    display: none;
+    background-color: $rgba-80-black;
+    text-align: center;
+  }
+  .button-toggle{
+    @include pad{
+      display: block;
+    }
+    display: none;
+    padding: 10px;
+    margin: 0 20px;
+    border-radius: 4px;
+    background-color: $white ;
+    cursor: pointer;
+    .button-line{
+      display: block;
+      margin: 5px 0;
+      width: 25px;
+      height: 3px;
+      background-color: $block;
+      -webkit-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+  }
+}
+  ul li a{
+      @include text-line-none;
+      color: $white;
+      padding: 20px;
+      font-size: 24px;
+      display: block;
+      border-radius: 4px;
+      &:hover{
+        background-color: $white;
+        color: $coffee;
+      }
+  }
+}
+.header-box-shadow{
+  box-shadow: 0 4px 2px -2px $sun;
+}
+/*footer*/
+.footer{
+  @include flex-justify-bt;
+  background-color: $block;
+  padding: 0 15px;
+  @include moblie576(){
+    flex-flow: column;
+  }
+  h2{
+    background-image: url("../img/logo-title.png");
+    @include bg-no-repeat;
+    width: 200px;
+    height: 80px;
+    @include text-hide;
+  }
+  .copyright{
+    color: $white;
+    @include pad(){
+      display: none;
+    }
+  }
+  .icon-box{
+    @include d-flex;
+    padding: 20px;
+  }
+  .icon-box a{
+    padding: 0 10px;
+    display: inline-block;
+  }
 }

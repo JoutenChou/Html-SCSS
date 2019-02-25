@@ -1,0 +1,82 @@
+/*veiwpoint*/
+.veiwpoint{
+  margin: 20px 0;
+  .veiwpoint-head{
+    @include flex-justify-bt;
+  }
+  .veiwpoint-title{
+    @include flex-align-end;
+    @include moblie576(){
+      flex-flow: column;
+      align-items: flex-start;
+    }
+  }
+  .veiwpoint-title h3{
+    @include fontSize(title);
+    font-weight: bold;
+    color: $coffee;
+  }
+  .veiwpoint-title small{
+    margin-left: 20px;
+    font-size: 16px;
+    color: $small-title;
+    @include moblie576(){
+      margin: 0;
+      margin-top: 20px;
+    }
+  }
+  .veiwpoint-more a{
+    text-decoration: none;
+    color: $coffee;
+    font-weight: bold;
+    border: 2px solid $coffee;
+    border-radius: 10px;
+    padding: 10px;
+    white-space: nowrap;
+    &:hover{
+      color: $white;
+      background-color: $coffee;
+    }
+  }
+  .veiwpoint-content{
+   @include flex-justify-bt;
+    margin: 20px 0;
+    @include pad(){
+      display: block;
+    }
+  }
+  .veiw-card{
+    box-shadow: 1px 3px 15px $small-title;
+    text-align: center;
+    padding: 20px 15px;
+    border-radius:4px;
+    transition: all .2s; 
+    &:hover{
+      padding: 30px 20px;
+    }
+    img{
+      border-radius:50%; 
+    }
+    h4{
+      font-size: 16px * 1.5;
+      margin: 20px 0;
+      font-weight: bold;
+    }
+    p{
+      line-height: 36px;
+      text-align: left;
+      width:60%;
+      margin: 0 auto;
+    }
+    &:hover{
+      box-shadow: 1px 3px 15px $block;
+    }
+  }
+  .veiw-card + .veiw-card{
+    margin-left: 20px;
+    @include pad() {
+     margin-left: 0;
+     margin-top: 20px; 
+    }
+  }
+}

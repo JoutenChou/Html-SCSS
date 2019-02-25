@@ -51,8 +51,11 @@
 @mixin text-line-none(){
   text-decoration: none;
 }
-@mixin fontSize(){
+@mixin fontSize($n){
   font-size: 16px;
+  @if $n == title{
+    font-size: 32px;
+  }
 }
 /*文字隱藏*/
 @mixin text-hide(){

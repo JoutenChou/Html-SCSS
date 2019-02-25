@@ -1,0 +1,44 @@
+@import "_varibles.scss";
+@import "_mixins.scss";
+@import "_grid.scss";
+.banner{
+  background-image: url("../img/slide.jpg");
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  h3{
+  color: #ffffff;
+  font-size: 32px;
+  line-height: 50px;
+  text-shadow: 1px 1px 5px #000000;
+  strong{
+    margin: 0 15px;
+    color: $coffee;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-shadow: 1px 1px 5px $white;
+  }
+  }
+  a{
+  margin-top:20px;
+  text-decoration: none;
+  background-color: $coffee;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 24px;
+  display: block;
+  border-radius: 4px;
+  transition: all .5s;
+  &:hover{
+    font-weight: bold;
+    background-color: $white;
+    color: $coffee;
+    border-radius: 20px;
+    letter-spacing: 15px;
+  }
+  }
+} 
