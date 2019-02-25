@@ -9,7 +9,7 @@
     align-items: flex-start
   }
   h4{
-    @include fontSize(title);
+    @include title-h(3);
     font-weight: bold;
     color:$coffee;
   }
@@ -23,9 +23,16 @@
   }
 }
 .compare-body{
+  @include pad(){
+    overflow-x: auto;
+    overflow-y: auto;
+  }
   table{
     width: 100%;
     margin: 20px 0; 
+    @include pad(){
+      width: 738px
+    }
   }
   thead{
     background-color: $table-titlecolor; 

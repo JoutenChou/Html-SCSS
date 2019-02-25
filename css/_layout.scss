@@ -9,7 +9,7 @@
 }
 .focus{
   color: $coffee;
-  font-weight: bold;
+  @include font-bold;
 }
 /*header*/
 .header{
@@ -92,7 +92,7 @@
   background-color: $block;
   padding: 0 15px;
   @include moblie576(){
-    flex-flow: column;
+    @include flex-colum;
   }
   h2{
     background-image: url("../img/logo-title.png");
@@ -104,7 +104,7 @@
   .copyright{
     color: $white;
     @include pad(){
-      display: none;
+     @include d-none;
     }
   }
   .icon-box{

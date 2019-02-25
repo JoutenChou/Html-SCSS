@@ -10,7 +10,7 @@
    h4{
      text-align: center;
      width: 50%;
-     font-size: $fontSize * 1.75;
+     @include title-h(3);
      font-weight: bold;
      @include pad(){
        margin-bottom: 50px;
@@ -22,7 +22,7 @@
      color: $coffee;
    }
    .connect-form{
-     width: 40%;
+     width: 50%;
      margin: 0 auto;
      @include pad(){
        width: 80%;
@@ -32,12 +32,16 @@
      display: block;
      width: 100%;
      padding-left:10px;
-     height: 40px;
+     height: 45px;
      border: 0;
      border-radius: 4px;
      &:nth-child(2){
        margin-top:10px; 
      }    
+   }
+   .form-size{
+     width: 80%;
+     margin: 0 auto
    }
    .form-group{
      float:right;
@@ -52,10 +56,10 @@
    .form-group button{
      border: 1.5px solid $coffee;
      border-radius:4px; 
-     font-size: $fontSize * 1.25;
+     @include title-h(5);
      font-weight: bold;
      color: $coffee;
-     height: 30px;
+     height: 45px;
      width: 120px;
      &:hover{
        background-color: $coffee;

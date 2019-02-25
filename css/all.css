@@ -286,8 +286,7 @@ body {
 }
 
 .veiwpoint .veiwpoint-title h3 {
-  font-size: 16px;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   color: #93433C;
 }
@@ -350,7 +349,7 @@ body {
 }
 
 .veiwpoint .veiw-card:hover {
-  padding: 30px 20px;
+  padding: 20px 30px;
 }
 
 .veiwpoint .veiw-card img {
@@ -413,8 +412,7 @@ body {
 }
 
 .compare-title h4 {
-  font-size: 16px;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   color: #93433C;
 }
@@ -431,9 +429,22 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .compare-body {
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+}
+
 .compare-body table {
   width: 100%;
   margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .compare-body table {
+    width: 738px;
+  }
 }
 
 .compare-body thead {
@@ -502,7 +513,7 @@ body {
 }
 
 .connect .connect-form {
-  width: 40%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -516,13 +527,18 @@ body {
   display: block;
   width: 100%;
   padding-left: 10px;
-  height: 40px;
+  height: 45px;
   border: 0;
   border-radius: 4px;
 }
 
 .connect .connect-form input:nth-child(2) {
   margin-top: 10px;
+}
+
+.connect .form-size {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .connect .form-group {
@@ -545,7 +561,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: #93433C;
-  height: 30px;
+  height: 45px;
   width: 120px;
 }
 

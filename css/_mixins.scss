@@ -16,6 +16,9 @@
 @mixin d-flex(){
   display: flex;
 }
+@mixin d-none(){
+  display: none;
+}
 @mixin flex-justify-bt(){
   display: flex;
   align-items: center;
@@ -38,6 +41,9 @@
   display: flex;
   align-items: flex-end; 
 }
+@mixin flex-colum(){
+  flex-flow: column
+}
 /*背景圖片*/
 @mixin bg-no-repeat(){
   background-position: center;
@@ -51,10 +57,27 @@
 @mixin text-line-none(){
   text-decoration: none;
 }
-@mixin fontSize($n){
-  font-size: 16px;
-  @if $n == title{
-    font-size: 32px;
+@mixin font-bold(){
+  font-weight: bold;
+}
+@mixin title-h($i){
+  @if($i == 1){
+    font-size: $fontSize * 2.5 + px ;
+  }
+  @else if($i == 2){
+    font-size: $fontSize * 2 + px ;
+  }
+  @else if($i == 3){
+    font-size: $fontSize * 1.75 + px ;
+  }
+  @else if($i == 4){
+    font-size: $fontSize * 1.5 + px ;
+  }
+  @else if($i == 5){
+    font-size: $fontSize * 1.25 + px ;
+  }
+  @else if($i == 6){
+    font-size: $fontSize * 1 + px ;
   }
 }
 /*文字隱藏*/
