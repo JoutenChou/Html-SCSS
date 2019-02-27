@@ -1,0 +1,171 @@
+@import "_varibles.scss";
+@import "_mixins.scss";
+@import "_grid.scss";
+.introduce-banner{
+  background-image: url("../img/slide2.jpg");
+  background-position: center;
+  height: 500px;
+  @include d-flex;
+  @include flex-center;
+  @include text-center;
+  .banner-title{
+    width:50%;
+    text-align: start;
+    padding: 20px;
+    @include moblie576(){
+      width: 80%;
+    }  
+  } 
+  .banner-title h3{
+    @include title-h(1);
+    @include font-bold;
+    color: $white;
+    text-shadow: 1px 1px 10px $block;
+    margin-bottom: 50px;
+      }
+  .banner-title small{
+    @include title-h(3);
+    @include font-bold;
+    color: $coffee;
+    text-shadow: 1px 1px 2px $white;;
+  }
+  .banner-title a{
+    @include d-flex;
+    @include flex-center;
+    @include font-bold;
+    @include title-h(5);
+    border-radius:4px; 
+    color: $white;
+    background-color: $coffee;
+    height: 50px;
+    width: 160px;
+    transition: all .3s;
+    @include text-line-none;
+    i{
+      margin-left: 10px;
+    }
+    &:hover{
+      color: $coffee;
+      background-color:$white;
+    }
+  }
+  .banner-img{
+      width: 50%;
+      img{
+        width: 30%;
+        border-radius:50%; 
+      }
+      img + img{
+        margin-left: 10%;
+      }
+      @include pad(){
+        @include d-none;
+      }
+  }
+}
+.ticket{
+  margin: 20px 0;
+  h3{
+    @include title-h(3);
+    color:$coffee;
+    @include font-bold;
+    letter-spacing: 5px;
+  }
+  .ticket-box{
+    @include d-flex;
+    @include flex-justify-bt;
+    margin-top: 20px;
+  }
+  .ticket-card{
+    position: relative;
+    width: 25%;
+    @include text-center;
+    @include pad(){
+      width: 50%;
+    }
+    &:hover img{
+      filter: inherit;
+      width: 120%;
+    }
+  }
+  .ticket-card + .ticket-card{
+    margin-left: 10px;
+  }
+  .ticket-card .ticket-title{
+    color:$white;
+    @include title-h(5);
+    @include font-bold;
+    text-shadow: 1px 1px 3px $block;
+    position: absolute;
+    cursor: pointer;
+    top: 42%;
+    left: 34%;
+  }
+  .ticket-box .img-box{
+    overflow: hidden;
+    max-height: 180px;
+    margin: 0 auto;
+  }
+  .ticket-card img{
+    width: 100%;
+    cursor: pointer;
+    filter: contrast(100%) brightness(70%);
+    transition: all .5s;
+  }
+}
+.promotion{
+  margin: 20px 0;
+  h3{
+    font-size: 28px;
+    color: #93433C;
+    font-weight: bold;
+    letter-spacing: 5px;
+  }
+  .promotion-box{
+    @include d-flex;
+    @include flex-justify-bt;
+  }
+  .promotion-card{
+    width: 100%;
+    height: 260px;
+    @include d-flex;
+    @include flex-center;
+    &:hover .promotion-title{
+      width: 120px;
+      height: 120px;
+      filter: opacity(100%);
+    }
+  }
+  .promotion-card +  .promotion-card{
+    margin-left: 20px;
+  }
+  .promotion-title{
+    background-color: $coffee;
+    color: white;
+    width: 100px;
+    height: 100px;
+    @include d-flex;
+    @include flex-center;
+    border-radius: 50%;
+    filter: opacity(70%);
+    transition: all .5s; 
+  }
+  .bg-hotel{
+    background-image: url("../img/hotel.jpg");
+    @include bg-no-repeat;
+    background-size:contain;
+    background-position:center;
+  }
+  .bg-plane{
+    background-image: url("../img/airplane.jpg");
+    @include bg-no-repeat;
+    background-size:contain;
+    background-position:center;
+  }
+  .bg-oneday{
+    background-image: url("../img/gohappy.jpg");
+    @include bg-no-repeat;
+    background-size:contain;
+    background-position:center;
+  }
+}

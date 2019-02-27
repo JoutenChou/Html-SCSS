@@ -1,5 +1,6 @@
 /*connect*/
 .connect{
+  @include d-flex;
   @include flex-center;
    height: 500px;
    background-color: $table-bgcolor;
@@ -8,7 +9,7 @@
      flex-flow: column;
    }
    h4{
-     text-align: center;
+     @include text-center;
      width: 50%;
      @include title-h(3);
      font-weight: bold;
@@ -57,7 +58,7 @@
      border: 1.5px solid $coffee;
      border-radius:4px; 
      @include title-h(5);
-     font-weight: bold;
+     @include font-bold;
      color: $coffee;
      height: 45px;
      width: 120px;

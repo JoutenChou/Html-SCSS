@@ -22,19 +22,18 @@
   margin: 0 auto;
   transition: all 1s;
   .top-menu{
+    @include d-flex;
     @include flex-justify-bt;
     align-items: center;
     height: 100%;
   }
   .logo h1{
       background-image: url("../img/logo-title.png");
-      @include bg-center;
+      @include bg-no-repeat;
       width: 200px;
       height: 80px;
-      text-indent: 101%;
-      overflow: hidden;
-      white-space: nowrap;
-  }
+      @include text-hide;
+    }
   .pc-menu{
     @include pad{
       display: none;
@@ -88,6 +87,7 @@
 }
 /*footer*/
 .footer{
+  @include d-flex;
   @include flex-justify-bt;
   background-color: $block;
   padding: 0 15px;

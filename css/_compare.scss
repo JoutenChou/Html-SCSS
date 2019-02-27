@@ -3,6 +3,7 @@
   margin: 20px 0;
 }
 .compare-title{
+  @include d-flex;
   @include flex-align-end;
   @include moblie576(){
     flex-flow: column;
@@ -10,7 +11,7 @@
   }
   h4{
     @include title-h(3);
-    font-weight: bold;
+    @include font-bold;
     color:$coffee;
   }
   small{
@@ -38,7 +39,7 @@
     background-color: $table-titlecolor; 
     th{
       padding: 20px;
-      font-weight: bold;
+      @include font-bold;
     }
   }
   tbody{

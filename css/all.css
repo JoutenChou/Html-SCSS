@@ -72,6 +72,7 @@ body {
 /*flex常用方法*/
 /*背景圖片*/
 /*文字*/
+/*文字至中*/
 /*文字隱藏*/
 /*layout*/
 .wrap {
@@ -119,8 +120,8 @@ body {
   background-repeat: no-repeat;
   width: 200px;
   height: 80px;
-  text-indent: 101%;
   overflow: hidden;
+  text-indent: 101%;
   white-space: nowrap;
 }
 
@@ -245,6 +246,73 @@ body {
 .footer .icon-box a {
   padding: 0 10px;
   display: inline-block;
+}
+
+/*網頁自訂顏色*/
+/*透明色*/
+/*網頁自訂顏色*/
+/*透明色*/
+/*主體架構*/
+/*常用樣式*/
+/*flex常用方法*/
+/*背景圖片*/
+/*文字*/
+/*文字至中*/
+/*文字隱藏*/
+.banner {
+  background-image: url("../img/slide.jpg");
+  background-position: center;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+}
+
+.banner h3 {
+  color: #ffffff;
+  font-size: 32px;
+  line-height: 50px;
+  text-shadow: 1px 1px 5px #000000;
+}
+
+.banner h3 strong {
+  margin: 0 15px;
+  color: #93433C;
+  font-weight: bold;
+  letter-spacing: 10px;
+  text-shadow: 1px 1px 5px #ffffff;
+}
+
+.banner a {
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: #93433C;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 24px;
+  display: block;
+  border-radius: 4px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.banner a:hover {
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #93433C;
+  border-radius: 20px;
+  letter-spacing: 15px;
 }
 
 /*veiwpoint*/
@@ -385,89 +453,6 @@ body {
   }
 }
 
-/*compare*/
-.compare {
-  margin: 20px 0;
-}
-
-.compare-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-@media (max-width: 576px) {
-  .compare-title {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-}
-
-.compare-title h4 {
-  font-size: 28px;
-  font-weight: bold;
-  color: #93433C;
-}
-
-.compare-title small {
-  margin-left: 20px;
-  color: #7A7A7A;
-}
-
-@media (max-width: 576px) {
-  .compare-title small {
-    margin: 0;
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .compare-body {
-    overflow-x: auto;
-    overflow-y: auto;
-  }
-}
-
-.compare-body table {
-  width: 100%;
-  margin: 20px 0;
-}
-
-@media (max-width: 768px) {
-  .compare-body table {
-    width: 738px;
-  }
-}
-
-.compare-body thead {
-  background-color: #bbbbbb;
-}
-
-.compare-body thead th {
-  padding: 20px;
-  font-weight: bold;
-}
-
-.compare-body tbody th {
-  padding: 20px;
-}
-
-.compare-body tbody tr {
-  border-bottom: 4px dotted #DADADA;
-}
-
-.compare-body tbody tr:hover {
-  background-color: #DADADA;
-}
-
 /*connect*/
 .connect {
   display: -webkit-box;
@@ -576,6 +561,89 @@ body {
   }
 }
 
+/*compare*/
+.compare {
+  margin: 20px 0;
+}
+
+.compare-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media (max-width: 576px) {
+  .compare-title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.compare-title h4 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #93433C;
+}
+
+.compare-title small {
+  margin-left: 20px;
+  color: #7A7A7A;
+}
+
+@media (max-width: 576px) {
+  .compare-title small {
+    margin: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .compare-body {
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+}
+
+.compare-body table {
+  width: 100%;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .compare-body table {
+    width: 738px;
+  }
+}
+
+.compare-body thead {
+  background-color: #bbbbbb;
+}
+
+.compare-body thead th {
+  padding: 20px;
+  font-weight: bold;
+}
+
+.compare-body tbody th {
+  padding: 20px;
+}
+
+.compare-body tbody tr {
+  border-bottom: 4px dotted #DADADA;
+}
+
+.compare-body tbody tr:hover {
+  background-color: #DADADA;
+}
+
 /*網頁自訂顏色*/
 /*透明色*/
 /*網頁自訂顏色*/
@@ -585,60 +653,263 @@ body {
 /*flex常用方法*/
 /*背景圖片*/
 /*文字*/
+/*文字至中*/
 /*文字隱藏*/
-.banner {
-  background-image: url("../img/slide.jpg");
+.introduce-banner {
+  background-image: url("../img/slide2.jpg");
   background-position: center;
   height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
+}
+
+.introduce-banner .banner-title {
+  width: 50%;
+  text-align: start;
+  padding: 20px;
+}
+
+@media (max-width: 576px) {
+  .introduce-banner .banner-title {
+    width: 80%;
+  }
+}
+
+.introduce-banner .banner-title h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #000000;
+  margin-bottom: 50px;
+}
+
+.introduce-banner .banner-title small {
+  font-size: 28px;
+  font-weight: bold;
+  color: #93433C;
+  text-shadow: 1px 1px 2px #ffffff;
+}
+
+.introduce-banner .banner-title a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #93433C;
+  height: 50px;
+  width: 160px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  text-decoration: none;
+}
+
+.introduce-banner .banner-title a i {
+  margin-left: 10px;
+}
+
+.introduce-banner .banner-title a:hover {
+  color: #93433C;
+  background-color: #ffffff;
+}
+
+.introduce-banner .banner-img {
+  width: 50%;
+}
+
+.introduce-banner .banner-img img {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.introduce-banner .banner-img img + img {
+  margin-left: 10%;
+}
+
+@media (max-width: 768px) {
+  .introduce-banner .banner-img {
+    display: none;
+  }
+}
+
+.ticket {
+  margin: 20px 0;
+}
+
+.ticket h3 {
+  font-size: 28px;
+  color: #93433C;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.ticket .ticket-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.ticket .ticket-card {
+  position: relative;
+  width: 25%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .ticket .ticket-card {
+    width: 50%;
+  }
+}
+
+.ticket .ticket-card:hover img {
+  -webkit-filter: inherit;
+          filter: inherit;
+  width: 120%;
+}
+
+.ticket .ticket-card + .ticket-card {
+  margin-left: 10px;
+}
+
+.ticket .ticket-card .ticket-title {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #000000;
+  position: absolute;
+  cursor: pointer;
+  top: 42%;
+  left: 34%;
+}
+
+.ticket .ticket-box .img-box {
+  overflow: hidden;
+  max-height: 180px;
+  margin: 0 auto;
+}
+
+.ticket .ticket-card img {
+  width: 100%;
+  cursor: pointer;
+  -webkit-filter: contrast(100%) brightness(70%);
+          filter: contrast(100%) brightness(70%);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.promotion {
+  margin: 20px 0;
+}
+
+.promotion h3 {
+  font-size: 28px;
+  color: #93433C;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.promotion .promotion-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.promotion .promotion-card {
+  width: 100%;
+  height: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.banner h3 {
-  color: #ffffff;
-  font-size: 32px;
-  line-height: 50px;
-  text-shadow: 1px 1px 5px #000000;
+.promotion .promotion-card:hover .promotion-title {
+  width: 120px;
+  height: 120px;
+  -webkit-filter: opacity(100%);
+          filter: opacity(100%);
 }
 
-.banner h3 strong {
-  margin: 0 15px;
-  color: #93433C;
-  font-weight: bold;
-  letter-spacing: 10px;
-  text-shadow: 1px 1px 5px #ffffff;
+.promotion .promotion-card + .promotion-card {
+  margin-left: 20px;
 }
 
-.banner a {
-  margin-top: 20px;
-  text-decoration: none;
+.promotion .promotion-title {
   background-color: #93433C;
-  color: #ffffff;
-  padding: 20px;
-  font-size: 24px;
-  display: block;
-  border-radius: 4px;
+  color: white;
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  -webkit-filter: opacity(70%);
+          filter: opacity(70%);
   -webkit-transition: all .5s;
   transition: all .5s;
 }
 
-.banner a:hover {
-  font-weight: bold;
-  background-color: #ffffff;
-  color: #93433C;
-  border-radius: 20px;
-  letter-spacing: 15px;
+.promotion .bg-hotel {
+  background-image: url("../img/hotel.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.promotion .bg-plane {
+  background-image: url("../img/airplane.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.promotion .bg-oneday {
+  background-image: url("../img/gohappy.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 /*# sourceMappingURL=all.css.map */

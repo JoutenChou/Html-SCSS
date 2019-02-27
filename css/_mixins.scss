@@ -9,7 +9,7 @@
   margin: 0 auto;
 }
 /*常用樣式*/
-@mixin text-decoration-none(){
+@mixin text-d-none(){
   text-decoration: none;
 }
 /*flex常用方法*/
@@ -20,25 +20,20 @@
   display: none;
 }
 @mixin flex-justify-bt(){
-  display: flex;
   align-items: center;
   justify-content:space-between; 
 }
 @mixin flex-align-center(){
-  display: flex;
   align-items: center;
 }
 @mixin flex-justify-center(){
-  display: flex;
   justify-content: center;
 }
 @mixin flex-center(){
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 @mixin flex-align-end(){
-  display: flex;
   align-items: flex-end; 
 }
 @mixin flex-colum(){
@@ -46,10 +41,6 @@
 }
 /*背景圖片*/
 @mixin bg-no-repeat(){
-  background-position: center;
-  background-repeat: no-repeat;
-}
-@mixin bg-center(){
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -79,6 +70,10 @@
   @else if($i == 6){
     font-size: $fontSize * 1 + px ;
   }
+}
+/*文字至中*/
+@mixin text-center(){
+  text-align: center;
 }
 /*文字隱藏*/
 @mixin text-hide(){

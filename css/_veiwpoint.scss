@@ -2,9 +2,11 @@
 .veiwpoint{
   margin: 20px 0;
   .veiwpoint-head{
+    @include d-flex;
     @include flex-justify-bt;
   }
   .veiwpoint-title{
+    @include d-flex;
     @include flex-align-end;
     @include moblie576(){
       flex-flow: column;
@@ -13,7 +15,7 @@
   }
   .veiwpoint-title h3{
     @include title-h(3);
-    font-weight: bold;
+    @include font-bold;
     color: $coffee;
   }
   .veiwpoint-title small{
@@ -39,7 +41,8 @@
     }
   }
   .veiwpoint-content{
-   @include flex-justify-bt;
+    @include d-flex;
+    @include flex-justify-bt;
     margin: 20px 0;
     @include pad(){
       display: block;
@@ -58,7 +61,7 @@
       border-radius:50%; 
     }
     h4{
-      font-size: 16px * 1.5;
+      @include title-h(4);
       margin: 20px 0;
       font-weight: bold;
     }

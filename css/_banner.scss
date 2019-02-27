@@ -5,11 +5,10 @@
   background-image: url("../img/slide.jpg");
   background-position: center;
   height: 500px;
-  display: flex;
+  @include d-flex;
+  @include flex-center;
   flex-flow: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+  @include text-center;
   h3{
   color: #ffffff;
   font-size: 32px;
@@ -18,7 +17,7 @@
   strong{
     margin: 0 15px;
     color: $coffee;
-    font-weight: bold;
+    @include font-bold;    
     letter-spacing: 10px;
     text-shadow: 1px 1px 5px $white;
   }
